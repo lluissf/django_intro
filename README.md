@@ -6,12 +6,13 @@ python -m venv .venv
 # Linux/Mac
 source .venv/bin/activate
 # Windows 
-.venv/Scripts/activate 
+.\.venv\Scripts\activate 
 
 # Atualizar o pip
 pip install --upgrade pip 
 # Instala os pacotes atualizados!
-pip install -r requirements.txt ```
+pip install -r requirements.txt 
+```
 
 ### Comandos básicos
 ```python
