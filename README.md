@@ -1,14 +1,17 @@
 # Django Intro 
 ### Para realizar a instalação:
 ```python
-python -m venv .venv # Gerar o espaço de trabalho virtual
+# Gerar o espaço de trabalho virtual
+python -m venv .venv 
+# Linux/Mac
+source .venv/bin/activate
+# Windows 
+.venv/Scripts/activate 
 
-source .venv/bin/activate # Linux/Mac
-.venv/Scripts/activate # Windows
-
-pip install --upgrade pip # Atualizar o pip
-pip install -r requirements.txt # Instala os pacotes atualizados!
-```
+# Atualizar o pip
+pip install --upgrade pip 
+# Instala os pacotes atualizados!
+pip install -r requirements.txt ```
 
 ### Comandos básicos
 ```python
