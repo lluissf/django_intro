@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from produtos.views import ProdutoViewSet
+from produtos.views import ProdutoViewSet, CategoriaViewSet
 from drf_spectacular.views import (
   SpectacularAPIView,
   SpectacularSwaggerView,
@@ -11,6 +11,7 @@ from drf_spectacular.views import (
 # Criando o router
 router = DefaultRouter()
 router.register(r'produtos', ProdutoViewSet)
+router.register(r'categorias', CategoriaViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),  
     path('api/', include(router.urls)),
