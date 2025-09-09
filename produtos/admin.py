@@ -3,6 +3,6 @@ from .models import Produto
 
 @admin.register(Produto)
 class ProdutoAdmin(admin.ModelAdmin):
-    list_display = ("id", "nome", "preco", "estoque", "criado_em", "atualizado_em")
+    list_display = ("id", "nome", "preco", "estoque", "criado_em", "atualizado_em", "categoria")
     search_fields = ("nome",)
-    list_filter = ("criado_em", "atualizado_em")
+    list_filter = ("criado_em", "atualizado_em", "categoria")
