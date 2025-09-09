@@ -10,8 +10,11 @@ source .venv/bin/activate
 
 # Atualizar o pip
 pip install --upgrade pip 
-# Instala os pacotes atualizados!
-pip install -r requirements.txt 
+# Instala os pacotes do útilmo "backup".
+pip install -r requirements.txt
+
+# Manter os pacotes sempre atualizados.
+pip freeze > requirements.txt
 ```
 
 ### Comandos básicos
