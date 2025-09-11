@@ -125,3 +125,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Configurações do drf-spectacular
+SPECTACULAR_SETTINGS = {
+  "TITLE": "API de Produtos",
+  "DESCRIPTION": "Documentação da API de Produtos feita em Django REST Framework",
+  "VERSION": "1.0.0",
+  "SERVE_INCLUDE_SCHEMA": False,
+}
