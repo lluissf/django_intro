@@ -40,9 +40,18 @@ INSTALLED_APPS = [
     'rest_framework',
     "drf_spectacular",
     'produtos',
-]
+] 
 REST_FRAMEWORK = {
-  "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+    'DEFAULT_FILTER_BACKENDS': [
+        'django_filters.rest_framework.DjangoFilterBackend',
+        'rest_framework.filters.SearchFilter',
+        'rest_framework.filters.OrderingFilter',
+    ],
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.BrowsableAPIRenderer',
+    ],
 }
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
